@@ -6,6 +6,8 @@ COPY packages/package.json packages/package-lock.json ./
 
 RUN npm install
 
+COPY src/ ./
+
 EXPOSE 3032
 
 ENTRYPOINT ["node", "main.js"]
